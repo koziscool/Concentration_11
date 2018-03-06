@@ -18,7 +18,7 @@ var matcherView = {
 	},
 
 	addCardsToGrid: function() {
-		for( var i = 0; i < this.model.cards.lengt; i++ ){
+		for( var i = 0; i < this.model.cards.length; i++ ){
 			var card = this.model.cards[i];
 			var $cardDiv = $("<div><div class='name'>" 
 				+ card.value + "</div></div>" );
