@@ -55,3 +55,7 @@
 	transform: rotate(0deg);
 }
 
+.revealed .name {
+	transform: translateY(60%) rotateY(0deg);
+}
+
