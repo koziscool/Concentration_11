@@ -34,7 +34,7 @@ var matcherView = {
 	},
 
 	hideCards: function() {
-		$(".card").not('.correct').removeClass('revealed';)
+		$(".card").not('.correct').removeClass('revealed');
 	},
 
 	setCorrect: function( id ){
