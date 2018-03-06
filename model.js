@@ -82,6 +82,7 @@ var matcherModel = {
 			isCorrect = this.selectedCard.matches( thisCard );
 
 		if( isCorrect ) this.matchedCards += 2;
+		this.selectedCard = null;
 
 		if( this.matchedCards === this.totalCards )
 			this.gameStateText = "Congratulations, you win!";
