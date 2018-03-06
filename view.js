@@ -33,8 +33,19 @@ var matcherView = {
 		$("#card-" + id).addClass('revealed')
 	},
 
+	hideCards: function() {
+		$(".card").not('.correct').removeClass('revealed';)
+	},
+
+	setCorrect: function( id ){
+		$('#card' + id).off('click');
+		$('#card-' + id).addClass('correct');
+	}
 
 	updateGameView: function() {
-
+		$('#game-state-text').text( this.model.gameStateText);
+		$('#num-guesses').text( this.model.numGuesses);
+		$('#total-cards').text( this.model.totalCards);
+		$('#matched-cards').text( this.model.matchedCards);
 	},
 };

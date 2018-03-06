@@ -59,3 +59,7 @@
 	transform: translateY(60%) rotateY(0deg);
 }
 
+.correct {
+	border-color:darkgreen;
+	background-color:lime;
+}
