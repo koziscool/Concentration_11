@@ -9,7 +9,7 @@ var matcherView = {
 
 		var width = 100.0 / this.model.size - 2;
 		$('.card').css({
-			width: width + "%";
+			width: width + "%"
 		});
 
 		$(".card").click( function(e){
@@ -18,10 +18,10 @@ var matcherView = {
 	},
 
 	addCardsToGrid: function() {
-		for( var i = 0; i < this.model.cards.length ){
+		for( var i = 0; i < this.model.cards.lengt; i++ ){
 			var card = this.model.cards[i];
-			var $cardDiv = $("<div><div class='name' "> + 
-				card.value + "</div></div>"> );
+			var $cardDiv = $("<div><div class='name'>" 
+				+ card.value + "</div></div>" );
 			$cardDiv.addClass('card');
 			$cardDiv.data('card-id', card.id);
 			$cardDiv.attr('id', 'card-' + card.id);
