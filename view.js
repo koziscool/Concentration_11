@@ -13,7 +13,7 @@ var matcherView = {
 		});
 
 		$(".card").click( function(e){
-			matcherController.selectCard( $this.data('card-id') );
+			matcherController.selectCard( $(this).data('card-id') );
 		});
 	},
 
