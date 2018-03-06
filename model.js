@@ -7,6 +7,7 @@ var matcherModel = {
 	cards: [],
 	currentId: 1,
 	totalCards: 0,
+	selectedCard: null,
 
 	init: function(size){
 		this.size = size || this.size;
@@ -51,6 +52,10 @@ var matcherModel = {
 
 	randomValue: function( ){
 		return this.cardValues[ Math.floor( Math.random() * this.cardValues.length)];
+	},
+
+	sameCard: function( id) {
+		return this.selectedCard && this.selectedCard.id === id;
 	},
 
 }
