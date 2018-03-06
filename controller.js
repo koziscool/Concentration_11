@@ -15,7 +15,7 @@ var matcherController = {
 		if( this.selecting ) return;
 		
 		this.selecting = true;
-		if( this.model.sameCard( cardId )) {
+		if( this.model.sameCard( id )) {
 			this.selecting = false;
 			return;
 		}
