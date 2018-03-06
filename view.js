@@ -40,8 +40,8 @@ var matcherView = {
 	setCorrect: function( id ){
 		$('#card' + id).off('click');
 		$('#card-' + id).addClass('correct');
-	}
-
+	},
+	
 	updateGameView: function() {
 		$('#game-state-text').text( this.model.gameStateText);
 		$('#num-guesses').text( this.model.numGuesses);
