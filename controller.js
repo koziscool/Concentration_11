@@ -11,8 +11,14 @@ var matcherController = {
 
 
 	selectCard: function( id ){
-		if( this.selecting ||  this.model.sameCard( id) ) return;
+		// if( this.selecting ||  this.model.sameCard( id) ) return;
+		if( this.selecting ) return;
+		
 		this.selecting = true;
+		if( this.model.sameCard( cardId )) {
+			this.selecting = false;
+			return;
+		}
 
 		this.view.revealCard( id );
 
